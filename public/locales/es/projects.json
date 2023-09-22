@@ -1,0 +1,12 @@
+{
+    "title": "Proyectos",
+    "seeitlive": "Ver en vivo",
+    "individual": "Proyecto individual",
+    "individualDevelopment": "realizado en el bootcamp de 'SoyHenry'. Consistió en integrar una API externa para demostrar el uso de diversas tecnologías. Usé React, Redux, CssModules, Express, Sequalize y Postgressql.",
+    "group": "Proyecto grupal",
+    "gruopDevelopment": "en el bootcamp 'SoyHenry'. Es una aplicación de finanzas que permite a los usuarios registrar sus gastos e ingresos financieros. Con esta aplicación, los usuarios pueden realizar un seguimiento detallado de sus finanzas personales y tomar decisiones informadas sobre sus gastos e inversiones. En el front-end, utilizamos Next.js, Redux Toolkit, TailwindCSS, ChartJS y Tremor. En el back-end utilizamos Express, PostgresSQL, Sequelize, Swagger, Passport, JWT, Nodemailer, MercadoPago API y Cloudinary. Personalmente trabajé en formularios controlados, uso de localStorage a través de darkMode y otras tareas del front-end.",
+    "readMore": "Leer más",
+    "readLess": "Leer menos"
+
+
+}
