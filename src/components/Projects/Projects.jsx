@@ -27,18 +27,18 @@ const Projects = () => {
         <motion.div initial={{ opacity: 0, y: 50, }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.2 } }}  
                     id="projects" 
-                    className=" text-white h-screen mt-10 ml-2 mr-2 ">
-            <div className="flex flex-row xl:text-3xl">
+                    className=" text-white h-screen mt-10 ml-2 mr-2">
+            <div className="flex flex-row sm:text-xl xl:text-3xl">
                 <p className="text-pink font-bold">#</p>
                 <p className="text-white font-bold">{t("title")}</p>
             </div>
             <div className="xl:flex xl:gap-6 xl:place-content-center xl:mt-20">
                 <div className="mt-6">
-                    <div className="flex mt-1 justify-center">
+                    <div className="flex mt-1 justify-center sm:mb-2">
 
-                        <Divider className="sm:hidden w-[4.5rem] bg-slowGray flex self-center mr-2"/>
-                        <h1 className="text-white xl:text-xl xl:flex xl:mb-2">The Dogs App</h1>
-                        <Divider className="sm:hidden w-[4.5rem] bg-slowGray flex self-center ml-2"/>
+                        <Divider className="md:hidden w-[4.5rem] bg-slowGray flex self-center mr-2 sm:w-60"/>
+                        <h1 className="text-white sm:text-base sm:font-bold xl:text-xl xl:flex xl:mb-2">The Dogs App</h1>
+                        <Divider className="md:hidden w-[4.5rem] bg-slowGray flex self-center ml-2 sm:w-60"/>
  
                         <Divider className="hidden xl:my-4 bg-slowGray xl:w-60 xl:ml-3"/>
                     </div>
@@ -46,14 +46,14 @@ const Projects = () => {
                     <div className="flex justify-center">
                         <Divider className="xl:my-4 hidden bg-slowGray xl:w-[19rem] xl:mt-[1.75rem] " />
                         
-                        <Divider className="bg-slowGray sm:hidden flex w-[5.125rem] self-center mt-[0.438rem]" />
+                        <Divider className="bg-slowGray md:hidden flex w-[5.125rem] self-center mt-[0.438rem] sm:w-[16rem]" />
                         <button className="bg-green-700 text-xs rounded-lg p-1 mt-2 ml-2 mr-2 xl:ml-4 font-bold pl-1 pr-1">
                             {t("seeitlive")}
                         </button> 
-                        <Divider className="bg-slowGray sm:hidden flex w-[5.125rem] self-center mt-[0.438rem]" />
+                        <Divider className="bg-slowGray md:hidden flex w-[5.125rem] self-center mt-[0.438rem] sm:w-[16rem]" />
                     </div>
                     
-                    <p className="xl:w-[24rem] xl:mt-2 xl:text-justify mt-3" style={isOpenDogs ? null : paragraphsStyles}>
+                    <p className="xl:w-[24rem] xl:mt-2 text-justify mt-3" style={isOpenDogs ? null : paragraphsStyles}>
                         <span className="text-orange-400 font-bold">{t("individual")} </span> 
                         {t("individualDevelopment")}
                     </p>
@@ -64,10 +64,10 @@ const Projects = () => {
                     </button>
                 </div>
                 <div>
-                    <div className="flex mt-6 justify-center">
-                        <Divider className="sm:hidden w-16 bg-slowGray flex self-center mr-2" />
-                        <h1 className="text-white xl:text-xl xl:flex xl:mb-2">Pig Commander</h1>
-                        <Divider className="sm:hidden w-16 bg-slowGray flex self-center ml-2" />
+                    <div className="flex mt-6 justify-center sm:mb-2 sm:mt-10">
+                        <Divider className="md:hidden w-16 bg-slowGray flex self-center mr-2 sm:w-[15rem]" />
+                        <h1 className="text-white sm:font-bold xl:text-xl xl:flex xl:mb-2">Pig Commander</h1>
+                        <Divider className="md:hidden w-16 bg-slowGray flex self-center ml-2 sm:w-[15rem]" />
 
 
                         <Divider className="hidden xl:my-4 bg-slowGray xl:w-[14rem] xl:ml-3" />
@@ -76,11 +76,11 @@ const Projects = () => {
                     <div className="flex justify-center">
                         <Divider className="xl:my-4 hidden bg-slowGray xl:w-[19rem] xl:mt-[1.75rem] " />
                         
-                        <Divider className="bg-slowGray sm:hidden flex w-[5.125rem] self-center mt-[0.438rem]" />
+                        <Divider className="bg-slowGray md:hidden flex w-[5.125rem] self-center mt-[0.438rem] sm:w-[16rem]" />
                         <button className="bg-green-700 text-xs rounded-lg p-1 mt-2 ml-2 mr-2 xl:ml-4 font-bold pl-1 pr-1">
                             {t("seeitlive")}
                         </button> 
-                        <Divider className="bg-slowGray sm:hidden flex w-[5.125rem] self-center mt-[0.438rem]" />
+                        <Divider className="bg-slowGray md:hidden flex w-[5.125rem] self-center mt-[0.438rem] sm:w-[16rem]" />
                     </div>
                     <p className="xl:w-[24rem] xl:mt-2 xl:text-justify mt-3"  style={isOpenPig ? null : paragraphsStyles} >
                     <span className="text-pinkStrong font-bold">{t("group")}</span> {t("gruopDevelopment")}

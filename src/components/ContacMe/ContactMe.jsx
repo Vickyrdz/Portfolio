@@ -29,18 +29,18 @@ const ContactMe = () => {
         <motion.div initial={{ opacity: 0, y: 50, }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.2 } }}     
                     id="contactme" 
-                    className=" text-white h-screen mt-[10.625rem] ml-2 mr-2 ">
-            <div className="flex flex-row xl:text-3xl">
+                    className=" text-white h-screen mt-[10.625rem] ml-2 mr-2 sm:mt-0 ">
+            <div className="flex flex-row sm:text-xl xl:text-3xl">
                 <p className="text-pink font-bold">#</p>
                 <p className="text-white font-bold mr-2">{t("title")}</p>
-                <Divider className="w-[8.625rem] self-center xl:w-[49rem] bg-white xl:ml-[2rem] xl:mb-5 xl:mt-5"/>
+                <Divider className="w-[8.625rem] self-center xl:w-[49rem] bg-white sm:w-[29.625rem] sm:ml-2 xl:ml-[2rem] xl:mb-5 xl:mt-5"/>
             </div>
-            <div className="mt-5 xl:mt-12">
+            <div className="mt-5 sm:mt-12 xl:mt-12">
                     <form  className="flex flex-col gap-3" target="_blank" action="https://formsubmit.co/vickyrodriguez544@gmail.com" method="POST">
                         <div >
-                            <div className="flex flex-col gap-3 justify-center">
+                            <div className="flex flex-col sm:flex-row gap-3 justify-center">
                                 <div>
-                                    <input className="bg-strongGray w-60 text-xs p-3 focus:outline-none active:outline-none rounded-2xl xl:w-[15rem]" 
+                                    <input className="bg-strongGray w-60 text-xs p-3 focus:outline-none active:outline-none rounded-2xl sm:w-[11.75rem] xl:w-[15rem]" 
                                             value={userLogin.name} autoComplete="off"
                                             type="text" 
                                             name="name" 
@@ -49,7 +49,7 @@ const ContactMe = () => {
                                             onFocus={allowNameErrorMessage}  />
                                 </div>
                                 <div>
-                                    <input className="bg-strongGray w-60 text-xs p-3 focus:outline-none active:outline-none rounded-2xl xl:w-[15rem]" 
+                                    <input className="bg-strongGray w-60 text-xs p-3 focus:outline-none active:outline-none rounded-2xl  sm:w-[11.75rem] xl:w-[15rem]" 
                                            value={userLogin.email} 
                                            autoComplete="off" 
                                            type="email" 
@@ -65,7 +65,7 @@ const ContactMe = () => {
                             )}
                         </div>
                         <div >
-                            <textarea className="bg-strongGray p-3 h-32 w-60 focus:outline-none active:outline-none rounded-2xl xl:h-[10.938rem] xl:w-[31.25rem]" 
+                            <textarea className="bg-strongGray p-3 h-32 w-60 focus:outline-none active:outline-none rounded-2xl sm:w-96 xl:h-[10.938rem] xl:w-[31.25rem]" 
                                       value={userLogin.textarea} 
                                       autoComplete="off"  
                                       placeholder="..."  
@@ -89,8 +89,8 @@ const ContactMe = () => {
                         </div>
                     </form>
                 </div>
-                <div className="flex xl:mt-7 justify-center">
-                    <Divider className="hidden xl:w-[45rem] bg-white xl:mb-5 xl:mt-5"/>
+                <div className="flex sm:mt-5 xl:mt-7 justify-center">
+                    <Divider className="md:hidden sm:w-[29rem] sm:self-center sm:mr-4 xl:w-[45rem] bg-white xl:mb-5 xl:mt-5"/>
 
                     <Divider className="sm:hidden self-center w-16 mr-2 bg-white xl:mb-5 xl:mt-5"/>
                     <Link href="https://github.com/Vickyrdz">

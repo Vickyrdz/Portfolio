@@ -36,7 +36,7 @@ const NavBar = () => {
       shouldHideOnScroll className='xl:bg-fixed bg-black xl:h-20 xl:w-full xl:flex '>
       <NavbarMenuToggle
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        className="sm:hidden text-white "
+        className="md:hidden text-white "
       />
       <NavbarMenu className="bg-black h-[11.625rem]">
         {menuItems.map((item, index) => {
@@ -60,7 +60,7 @@ const NavBar = () => {
           MyPortfolio
         </p>
       </div>
-      <div className='gap-10 hidden sm:flex xl:text-base xl:w-full font-bold xl:h-20 xl:items-center xl:justify-end xl:mr-5'>
+      <div className='gap-10 sm:hidden md:flex xl:text-base xl:w-full font-bold xl:h-20 xl:items-center xl:justify-end xl:mr-5'>
         <div className='flex'>
           <p className='text-pink lg:self-center'>#</p>
           <Link href="home">
