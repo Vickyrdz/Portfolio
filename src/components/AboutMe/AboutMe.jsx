@@ -13,25 +13,25 @@ const AboutMe = () => {
         <motion.div initial={{ opacity: 0, y: 50, }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.2 } }}   
                     id="aboutme"
-                    className="text-white h-screen mt-60 ">
-            <div   className=" flex flex-row text-3xl mb-8">
+                    className="text-white h-screen mt-[33rem] ml-2 mr-2">
+            <div className="flex flex-row mb-2 xl:text-3xl xl:mb-8">
                 <p className="text-pink font-bold">#</p>
-                <p className="text-white font-bold">{t("title")}</p>
-                <Divider className="w-[54rem] bg-white ml-[2rem] mb-5 mt-5"/>
+                <p className="text-white font-bold mr-2">{t("title")}</p>
+                <Divider className="w-[10.563rem] flex self-center xl:w-[54rem] bg-white xl:ml-[2rem] xl:mb-5 xl:mt-5"/>
             </div>
-            <div className="flex flex-col justify-center">
-                <p className="text-2xl w-[59.188rem] text-white mt-[1rem] self-center">
+            <div className="mt-6 xl:flex xl:flex-col xl:justify-center">
+                <p className="xl:text-2xl xl:w-[59.188rem] text-white xl:mt-[1rem] xl:self-center">
                     {t("text")}
                 </p>
-                <div className="flex flex-row mt-14 self-center">
-                    <Divider className="w-32 bg-white self-center"/>
-                    <p className=" text-slowGray text-xl ml-5 font-bold mr-1">{t("last")}</p>
-                    <p className="text-pink font-bold text-xl mr-5">{t("contactme")}</p>
-                    <Divider className="w-32 bg-white self-center"/>
+                <div className="flex flex-col mt-5 xl:mt-14 self-center">
+                    <Divider className="hidden xl:w-32 bg-white xl:self-center"/>
+                    <p className=" text-slowGray w-56 flex self-center xl:text-xl xl:ml-5 font-bold xl:mr-1">{t("last")}</p>
+                    <p className="text-pink font-bold xl:text-xl xl:mr-5">{t("contactme")}</p>
+                    <Divider className="hidden xl:w-32 bg-white xl:self-center"/>
                 </div>
             </div>
-            <div className="flex justify-center mt-10">
-               <Image className="h-28 " src={gif}/>
+            <div className="flex justify-center mt-3 xl:mt-10">
+               <Image className="w-20 xl:h-28 " src={gif}/>
             </div>
            
           

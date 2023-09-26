@@ -16,7 +16,10 @@ export default {
         pinkStrong: "#df4ea2",
         strongGray: "#2b2a2a",
         mediumGray: "#a9a9a9",
-      } 
+      },
+      rotate: {
+        106: "106deg"
+      }
     },
   },
   darkMode: "class",

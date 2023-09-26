@@ -8,7 +8,7 @@ import ContactMe from './components/ContacMe/ContactMe'
 function App() {
 
   return (
-    <div className='flex flex-col'>
+    <div className='xl:flex xl:flex-col'>
       <NavBar/>
       <Home/>
       <Projects/>
