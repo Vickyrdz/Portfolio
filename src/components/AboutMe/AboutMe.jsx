@@ -14,7 +14,7 @@ const AboutMe = () => {
                     id="aboutme"
                     className="text-white h-screen mt-[33rem] ml-2 mr-2 sm:h-screen sm:mt-[38.75rem] lg:mt-[23.75rem]">
             <div className="flex flex-row mb-2 sm:text-xl lg:text-2xl lg:ml-6 lg:mb-8">
-                <p className="text-pink font-bold ml-5 sm:ml-5">#</p>
+                <p className="text-pink font-bold md:ml-5 sm:ml-5">#</p>
                 <p className="text-white font-bold mr-2">{t("title")}</p>
                 <Divider className="bg-white w-9/12 ml-2 flex self-center sm:w-9/12 lg:ml-4 lg:w-4/5 xl:w-[54rem] xl:ml-[2rem] xl:mb-5 xl:mt-5"/>
             </div>
