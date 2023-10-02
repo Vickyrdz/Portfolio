@@ -29,11 +29,11 @@ const ContactMe = () => {
         <motion.div initial={{ opacity: 0, y: 50, }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.2 } }}     
                     id="contactme" 
-                    className=" text-white h-screen mt-[10.625rem] ml-2 mr-2 sm:mt-0 ">
+                    className=" text-white h-screen ml-2 mr-2 sm:mt-0 ">
             <div className="flex flex-row sm:text-xl lg:text-2xl lg:ml-6">
-                <p className="text-pink font-bold">#</p>
+                <p className="text-pink font-bold md:ml-5 ">#</p>
                 <p className="text-white font-bold mr-2">{t("title")}</p>
-                <Divider className="w-[8.625rem] bg-white  self-center  sm:w-[29.625rem] sm:ml-2 lg:w-[51.625rem] xl:ml-[2rem] xl:mb-5 xl:mt-5"/>
+                <Divider className="w-9/12 bg-white ml-2 self-center  sm:w-9/12  sm:ml-2 lg:w-[51.625rem] xl:ml-[2rem] xl:mb-5 xl:mt-5"/>
             </div>
             <div className="mt-5 sm:mt-12 lg:mt-12">
                     <form  className="flex flex-col gap-3" target="_blank" action="https://formsubmit.co/vickyrodriguez544@gmail.com" method="POST">
@@ -90,9 +90,9 @@ const ContactMe = () => {
                     </form>
                 </div>
                 <div className="flex sm:mt-5 xl:mt-7 justify-center">
-                    <Divider className="md:hidden lg:flex sm:w-[29rem] sm:self-center sm:mr-4 lg:w-[48rem] bg-white lg:mb-5 lg:mt-5"/>
+                    <Divider className=" hidden md:flex md:w-[39rem] lg:flex sm:w-[29rem] sm:self-center sm:mr-4 lg:w-[48rem] bg-white lg:mb-5 lg:mt-5"/>
 
-                    <Divider className="sm:hidden self-center w-16 mr-2 bg-white lg:mb-5 lg:mt-5"/>
+                    <Divider className="md:hidden self-center w-16 mr-2 bg-white lg:mb-5 lg:mt-5"/>
                     <Link href="https://github.com/Vickyrdz">
                         <img className="w-7 lg:w-9 " src="data:image/png;base64,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">
                         </img>
@@ -108,7 +108,7 @@ const ContactMe = () => {
                     <Link href="https://drive.google.com/file/d/19JdTWIMC8seuhJUwvYwKT3YGaY_k8jyz/view">
                         <img className="w-[1.875rem] lg:w-9   lg:ml-2 cursor-pointer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD+ElEQVR4nO2aWahNURjHN9ccmSMyZHgw30LGBzOhDOWBi05kSKFupuLhIkNevFCS8kCUEh6QiCdDESWZdR/IgyEyX8P96XO+w+e459y9991nn721/7Uevv/61lrffw9rrW/t7TgJEiRI8L8A6AssBJbGpEisff2K3QpUEz9IzFv83Nlq4BWwG9gZkyKxvtbY+3gRXKZXa5cTM0jMGnuZl0YpbVRhuKHAJqCe4RYDM4zdTF+F3obrD2wGGhhurhRjN1Sf/obrrX01M9wMYJGx62lMQwxXobGn6ir4mHL9DPcVeGjsadlPBrBfuVGGeyHF2KPUZ38Nd2qa4R7KmMbupz7HCiH4hHKlhhNUGnumcrsNd1C5MYZ7I8XYY9TnoOHkfRTMNFylEMYuVZ8ThRC8A3gHtDPcXeCMsQcAVbJEGG498BnoZrirwBVjd1OfdYZbpn3Zx/ysjGnsdsB7YHvgggVAU8cAaAyU5PPJ0U7e2YY+2pXImLX4BCc4DghFMOk7vQG4rxPZM2Av0MHDmNJHa4+lZeiCSQd68c9G5/fCL3gKdHfRRyfgLf6wK2zBFep7K7OPBdoCR5W/6KKP5sBp4IbHch2YH7bgp8APoGcW3wh4rP30cEJCQQWT3lkJHuWoP6D1U12MOQKY47HMBlqFKbhV5nHOUf/P5iGHXy/841CYgluo350c9Xu0fnot/cj6usZHdiSbocGhCRborCw7ohZOFoBr2s9AJySEIXif+h4Bmhh+tfL3bIbl4Q5vlNnbddAhPdLDdDnKQGbs48Btw73S/XQDH+/w+MgIJr2zkuVI8AA4BXw3wcqFOGfsCza3raG/4Vkz8FigfiQEA2u1/pP6/goMaCOTiN1dqS0XRHDcKTACFwwMAr4BH2TtdNmf7Lxuap8LnJgJvqR1qzwG0gf4AjzJ9z7XFUHnw101Maj0+X5JBuXtgK3IgpdnH+F4DGactj/pp30xBI8GLvs93df1VrKocj/tXY6RnHjUiuSIR6HHKrN9pHGuUjyZCHXDUZPfwGK8w4cpDH6leMCEPD5V+XZqhRI8WFOyID+A/U7x9KhnYw6/JS5jTyatqN3hXKX46SFwiHBR3PSQ9BlW0LN0rhKd9LAYAEbqE3a+liLJiWBebAWrWHu44AZj4yw4M3eUy6F+npJJbl7W9DUyToIzOXj7PD6yafmo6escrwOk4iQYmKjHTSJ2hZ8BUhEV/M/nV2BSncRGXHDHwMVGXHCnLLGf6yw24oI7qz05MLERF9wFmBKo2Cj+emgEr9Sj3mq36aLXn0vly+A2/TZUzJLZLhK42AzkF9wI/j78HJjlFAqkvxZE4QfxlGZPf/2UliBBggTO/46fg5HI2ZXQ7gUAAAAASUVORK5CYII=" />
                     </Link>
-                    <Divider className="sm:hidden w-16 ml-2 self-center bg-white lg:mb-5 lg:mt-5"/>
+                    <Divider className="md:hidden w-16 ml-2 self-center bg-white lg:mb-5 lg:mt-5"/>
 
                 </div>
         </motion.div>
