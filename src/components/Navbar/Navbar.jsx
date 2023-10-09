@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import { Navbar, NavbarMenu, Link, NavbarMenuItem, NavbarMenuToggle } from "@nextui-org/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 
@@ -11,30 +11,41 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
+    
+//ahi pude hacer que funcione pero no se cierra el menu hamburguesa 
     {
       label: "home",
       to: "#home", 
+      href: "#home"
     },
     {
       label: "projects",
-      to: '#projects'
+      to: '#projects',
+      href: "#projects"
     },
     {
       label: "aboutme",
       to: "#abotme", 
+      href: "#aboutme"
     },
     {
       label: "contactme",
-      to: "#contacme", 
+      to: "#contacme",
+      href: "#contacme" 
     }
   ];
 
   const { t } = useTranslation(["navbar"]);
 
+
   return (
     <Navbar aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-      shouldHideOnScroll className='xl:bg-fixed bg-black xl:h-20 xl:w-full xl:flex '>
+      shouldHideOnScroll
+      isMenuOpen={isMenuOpen}
+      className='xl:bg-fixed bg-black xl:h-20 xl:w-full xl:flex '>
       <NavbarMenuToggle
+        isSelected={isMenuOpen}
+        onChange={setIsMenuOpen}
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         className="md:hidden text-white "
       />
@@ -46,7 +57,12 @@ const NavBar = () => {
                 className="w-full text-white bg-black"
                 size="lg"
               >
-                {t(item.label)}
+                <Link href={item.href}  onClick={()=> setIsMenuOpen(false)}> 
+                  <div className="flex text-white">
+                    <p className="text-pink">#</p>
+                    {t(item.label)} 
+                  </div>
+                </Link>
               </p>
             </NavbarMenuItem>
           );
@@ -62,7 +78,7 @@ const NavBar = () => {
       <div className='gap-10 hidden sm:hidden md:flex xl:text-base xl:w-full font-bold xl:h-20 xl:items-center xl:justify-end xl:mr-5'>
         <div className='flex'>
           <p className='text-pink lg:self-center'>#</p>
-          <Link href="home">
+          <Link href="#home">
             <p className='text-white'>{t("home")}</p>
           </Link>
         </div>
