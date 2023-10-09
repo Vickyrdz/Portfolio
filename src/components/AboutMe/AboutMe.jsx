@@ -16,7 +16,7 @@ const AboutMe = () => {
             <div className="flex flex-row mb-2 sm:text-xl lg:text-2xl lg:ml-6 lg:mb-8">
                 <p className="text-pink font-bold md:ml-5 sm:ml-5">#</p>
                 <p className="text-white font-bold mr-2">{t("title")}</p>
-                <Divider className="bg-white w-9/12 ml-2 flex self-center sm:w-9/12 lg:ml-4 lg:w-4/5 xl:w-[54rem] xl:ml-[2rem] xl:mb-5 xl:mt-5"/>
+                <Divider className="bg-white w-9/12 ml-2 flex self-center sm:w-9/12 lg:ml-4 lg:w-4/5 xl:w-[53rem] xl:ml-[2rem] xl:mb-5 xl:mt-5"/>
             </div>
             <div className="mt-6 lg:flex lg:flex-col lg:justify-center">
                 <p className="lg:text-xl lg:w-[59.188rem] text-white lg:mt-[1rem] lg:self-center">
