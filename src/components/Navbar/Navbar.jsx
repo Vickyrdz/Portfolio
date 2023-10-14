@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import { Navbar, NavbarMenu, Link, NavbarMenuItem, NavbarMenuToggle } from "@nextui-org/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 
 
@@ -12,7 +12,6 @@ const NavBar = () => {
 
   const menuItems = [
     
-//ahi pude hacer que funcione pero no se cierra el menu hamburguesa 
     {
       label: "home",
       to: "#home", 
